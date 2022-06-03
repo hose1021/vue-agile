@@ -104,7 +104,7 @@
 </template>
 
 <script>
-	import handlers from './mixins/handlers'
+	// import handlers from './mixins/handlers'
 	import helpers from './mixins/helpers'
 	import methods from './mixins/methods'
 	import preparations from './mixins/preparations'
