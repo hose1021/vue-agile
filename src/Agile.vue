@@ -12,8 +12,6 @@
 				ref="track"
 				class="agile__track"
 				:style="{transform: `translate(${translateX + marginX}px)`, transition: `transform ${settings.timing} ${transitionDelay}ms`}"
-				@mouseover="handleMouseOver('track')"
-				@mouseout="handleMouseOut('track')"
 			>
 				<div
 					v-show="slidesCloned"
@@ -115,7 +113,7 @@
 	export default {
 		name: 'Agile',
 
-		mixins: [handlers, helpers, methods, preparations, settings, throttle, watchers],
+		mixins: [helpers, methods, preparations, settings, throttle, watchers],
 
 		data () {
 			return {
